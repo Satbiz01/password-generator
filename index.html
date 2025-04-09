@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="second-container">  
+      <button class="password-button">Create password</button>
+      <button class="password-button-copy">Create custom password</button>
+      <div>
+        <input class="check" type="range" min="6" max="12" value="12">
+        <span class="range-value">12</span>
+      </div>
+      
+      <p class="password-text">Your password</p>
+    </div>
+    <div class="third-container">
+      <img class="back-arrow-img" src="./images/back.svg" alt="">
+      <button class="password-button-custom">Create password</button>
+      <form action="">
+        <div>
+          <input class="check-custom" type="range" min="6" max="40" value="40">
+          <span class="range-value-custom">40</span>
+        </div>
+
+      <div class="PLR-option"> 
+          <input class="lower" type="checkbox">
+          <label for="lower">lower case</label>
+          
+          <input class="upper" type="checkbox">
+          <label for="upper">upper case</label>
+
+          <input class="symbols" type="checkbox">
+          <label for="symbols">symbols</label>
+
+          <input class="numbers" type="checkbox">
+          <label for="numbers">numbers</label>
+        </form>
+      </div>
+      <p class="password-text-custom">Your password</p>
+    </div>
+  </div>
+</body>
+</html>
